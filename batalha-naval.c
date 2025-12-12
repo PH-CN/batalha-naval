@@ -27,11 +27,11 @@ main() {
 
     // Posicionando os navios no tabuleiro
     for (int i = 0; i < tamnavio; i++) {
-        tabuleiro[horizontalLinha][horizontalColuna + i] = 3;
+        tabuleiro[horizontalLinha][horizontalColuna + i] = 3;     // navio horizontal
         if(tabuleiro[verticalLinha + i][verticalColuna] != 0) {
             printf("Sobreposição detectada!\n");
             return 1;
-        }      // navio horizontal
+        }
         tabuleiro[verticalLinha + i][verticalColuna] = 3;      // navio vertical
     }
 
